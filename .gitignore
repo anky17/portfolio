@@ -1,0 +1,23 @@
+# macOS system files
+.DS_Store
+
+# Node modules (if you ever add npm packages)
+node_modules/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vercel output (if using Vercel CLI for builds)
+.vercel/
+
+# Environment variables (if you add any)
+.env
+.env.local
+.env.*.local
+
+# Build output (if you add a build step in the future)
+dist/
+build/
+out/ 

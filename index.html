@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.jpeg"
+              alt="Ankit Diyal"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Ankit Diyal">Ankit Diyal</h1>
+
+            <p class="title">Flutter Developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:ankitdiyal17@gmail.com" class="contact-link"
+                  >ankitdiyal17@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+12133522795" class="contact-link"
+                  >+977 9765306294</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1982-06-23">October 04, 2004</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Imadol, Lalitpur, Nepal</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.facebook.com/ankitdiyal17"
+                class="social-link"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/ankitdiyal17/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/ankyizwack/"
+                class="social-link"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I am front-end app developer using Flutter, skilled in building
+              user-friendly applications and applying effective problem-solving
+              techniques. Have basic knowledge of HTML, CSS, and JavaScript,
+              along with Java and Python. Passionate about learning and
+              contributing to impactful projects.
+            </p>
+
+            <p>
+              My job is to build your app so that it is functional and
+              user-friendly but at the same time attractive. Moreover, I add
+              personal touch to your product and make sure that is eye-catching
+              and easy to use. My aim is to bring across your message and
+              identity in the most creative way.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What I'm doing</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="Flutter icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Flutter App Development</h4>
+                  <p class="service-item-text">
+                    Building high-quality, cross-platform mobile apps using
+                    Flutter and Dart.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="React icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Frontend Development (React)
+                  </h4>
+                  <p class="service-item-text">
+                    Creating responsive and interactive web interfaces with
+                    React.js.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Python icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Python Programming</h4>
+                  <p class="service-item-text">
+                    Writing scripts and small applications in Python for
+                    automation and data tasks.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Java icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Java (Basic)</h4>
+                  <p class="service-item-text">
+                    Basic understanding of Java for academic and small-scale
+                    projects.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Remove all testimonial modal and testimonial items, as they reference non-user names. -->
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Education</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Kathford International College
+                </h4>
+                <span>March 2023 – Present</span>
+                <p class="timeline-text">
+                  Bachelor’s Degree in Computer Science<br />
+                  <a href="https://kathford.edu.np" target="_blank"
+                    >kathford.edu.np</a
+                  >
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Radiant Secondary School</h4>
+                <span>September 2020 – June 2022</span>
+                <p class="timeline-text">
+                  High School, GPA: 3.54<br />
+                  <a href="https://radiantmnr.edu.np" target="_blank"
+                    >radiantmnr.edu.np</a
+                  >
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="code-slash-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Projects</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Expense Tracker</h4>
+                <span
+                  ><a
+                    href="https://github.com/anky17/expenseTracker"
+                    target="_blank"
+                    >GitHub</a
+                  ></span
+                >
+                <p class="timeline-text">
+                  A Flutter-based app to track daily expenses, with
+                  add/view/delete and local storage.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">News App</h4>
+                <span
+                  ><a href="https://github.com/anky17/News-App" target="_blank"
+                    >GitHub</a
+                  ></span
+                >
+                <p class="timeline-text">
+                  A dynamic Flutter news app with real-time API integration and
+                  bookmarking.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Weather App</h4>
+                <span
+                  ><a
+                    href="https://github.com/anky17/Weather_App"
+                    target="_blank"
+                    >GitHub</a
+                  ></span
+                >
+                <p class="timeline-text">
+                  A simple weather app built with Flutter that fetches and
+                  displays real-time weather data using API integration.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">Skills</h3>
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Flutter</h5>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">HTML/CSS/JS and React.js</h5>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Git</h5>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Python and Machine Learning</h5>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Java</h5>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 40%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="ribbon-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Certifications</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Flutter</h4>
+                <span>Broadway InfoSys, October 20, 2024</span>
+                <a
+                  href="https://www.broadwayinfosys.com/certificate/1734623400"
+                  target="_blank"
+                  >Certificate</a
+                >
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="trophy-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Interests</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Sports</h4>
+                <p class="timeline-text">Cricket, Table Tennis, Badminton</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="language-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Languages</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">English</h4>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Nepali</h4>
+              </li>
+            </ol>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a
+                  href="https://github.com/anky17/expenseTracker"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-1.jpg"
+                      alt="expenseTracker"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">expenseTracker</h3>
+                  <p class="project-category">Dart Application</p>
+                </a>
+                <a
+                  href="./assets/resume.pdf"
+                  target="_blank"
+                  class="resume-link"
+                  style="
+                    display: inline-block;
+                    margin-top: 8px;
+                    color: #007bff;
+                    text-decoration: underline;
+                  "
+                  >View Resume</a
+                >
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a
+                  href="https://github.com/anky17/Library-Management-System"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-2.png"
+                      alt="Library-Management-System"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Library-Management-System</h3>
+                  <p class="project-category">C++ Application</p>
+                </a>
+                <a
+                  href="./assets/resume.pdf"
+                  target="_blank"
+                  class="resume-link"
+                  style="
+                    display: inline-block;
+                    margin-top: 8px;
+                    color: #007bff;
+                    text-decoration: underline;
+                  "
+                  >View Resume</a
+                >
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="https://github.com/anky17/Weather_App" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-3.jpg"
+                      alt="Weather_App"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Weather_App</h3>
+                  <p class="project-category">C++ Application</p>
+                </a>
+                <a
+                  href="./assets/resume.pdf"
+                  target="_blank"
+                  class="resume-link"
+                  style="
+                    display: inline-block;
+                    margin-top: 8px;
+                    color: #007bff;
+                    text-decoration: underline;
+                  "
+                  >View Resume</a
+                >
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #CONTACT
+      -->
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form
+              action="send-message.php"
+              method="POST"
+              class="form"
+              data-form
+            >
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
