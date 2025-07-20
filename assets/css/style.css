@@ -1236,6 +1236,25 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
+.form-success {
+  margin: 1.5rem 0 0 0;
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
+  color: #fff;
+  border-radius: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 16px rgba(78, 84, 200, 0.15);
+  text-align: center;
+  letter-spacing: 0.5px;
+  animation: fadeInSuccess 0.7s ease;
+}
+
+@keyframes fadeInSuccess {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 
 
 
