@@ -1914,3 +1914,24 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/* Hide contact section social icons on desktop */
+.contact-social-list {
+  display: none;
+}
+
+/* Show contact section social icons and hide sidebar social icons on mobile */
+@media (max-width: 600px) {
+  .contact-social-list {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .sidebar .social-list:not(.contact-social-list) {
+    display: none !important;
+  }
+}
