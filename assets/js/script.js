@@ -70,6 +70,42 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+// Contact form AJAX submission
+const contactForm = document.querySelector("[data-form]");
+if (contactForm) {
+  contactForm.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    const formData = new FormData(contactForm);
+    const data = Object.fromEntries(formData.entries());
+
+    // Optionally, disable the button and show loading
+    const btn = contactForm.querySelector("[data-form-btn]");
+    if (btn) btn.disabled = true;
+
+    try {
+      const response = await fetch("/api/send-message", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      const result = await response.json();
+
+      // Show a nice message
+      let msg = document.createElement("div");
+      msg.className = "form-success";
+      msg.textContent = result.success
+        ? "Thank you for your message!"
+        : "Something went wrong. Please try again.";
+      contactForm.parentNode.insertBefore(msg, contactForm);
+      contactForm.style.display = "none";
+    } catch (err) {
+      alert("There was an error sending your message. Please try again later.");
+    } finally {
+      if (btn) btn.disabled = false;
+    }
+  });
+}
+
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
